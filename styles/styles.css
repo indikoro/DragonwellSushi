@@ -4,6 +4,7 @@ html, body {
 
 h1 {
     font-family: 'Roboto Mono', monospace;
+    font-size: 3em;
 }
 
 .container-fluid {
@@ -14,27 +15,12 @@ h1 {
 
 .center-block {
     position: absolute;
+    display: block;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.arrow-animate {
-    animation: MoveUpDown 2s linear infinite;
-    position: absolute;
-    margin: auto;
-    bottom: 0;
-    text-align: center;
+.fixed-bottom {
+    padding-bottom: 50px;
 }
-
-@keyframes MoveUpDown {
-    0% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 10%;
-    }
-    100% {
-      bottom: 0;
-    }
-  }
